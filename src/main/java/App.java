@@ -5,7 +5,7 @@ public class App {
         telusko.setAid(101);
         telusko.setAname("navin");
         telusko.setColor("Green");
-        
+
 
     }
 
