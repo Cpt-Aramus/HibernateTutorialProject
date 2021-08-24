@@ -1,8 +1,16 @@
+import javax.persistence.*;
+
+@Entity
 public class Alien {
 
+    @Id
     private int aid;
-    private String aname;
+
+
+    private AlienName aname;
+
     private String color;
+
 
     public int getAid() {
         return aid;
@@ -12,11 +20,11 @@ public class Alien {
         this.aid = aid;
     }
 
-    public String getAname() {
+    public AlienName getAname() {
         return aname;
     }
 
-    public void setAname(String aname) {
+    public void setAname(AlienName aname) {
         this.aname = aname;
     }
 
@@ -28,5 +36,12 @@ public class Alien {
         this.color = color;
     }
 
-
+    @Override
+    public String toString() {
+        return "Alien{" +
+                "aid=" + aid +
+                ", aname='" + aname + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
